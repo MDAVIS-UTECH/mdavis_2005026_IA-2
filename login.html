@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for Coding Conf 2026 and create your personalized event ticket.">
+  <title>Register | Coding Conf 2026</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/validation.js" defer></script>
+</head>
+<body class="form-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Coding Conf home"><img class="brand-logo" src="../assets/logo-mark.svg" alt=""><span>Coding<span class="brand-light">Conf</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">← Back to event</a><span class="nav-step">STEP 01 <span>/</span> 02</span></nav>
+  </header>
+  <main id="main-content" class="registration-layout wrap">
+    <section class="registration-intro">
+      <h1>Make it<br><span class="gradient-text">official.</span></h1>
+      <p>Fill in your details to generate a personalized Coding Conf pass.</p>
+    </section>
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="form-panel-head"><div><p class="eyebrow">ATTENDEE DETAILS</p><h2 id="form-title">Event Registration</h2></div></div>
+      <form id="registration-form" novalidate>
+        <div class="field-group">
+          <label for="fullName">Full name <span class="info-tip" title="Enter your first and last name." aria-label="Enter your first and last name."><img src="../assets/icon-info.png" alt=""></span> <span>*</span></label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="e.g. Jordan Campbell" aria-describedby="name-error" required>
+          <small class="field-error" id="name-error"></small>
+        </div>
+        <div class="field-group">
+          <label for="email">Email address <span class="info-tip" title="Use an email address you can access." aria-label="Use an email address you can access."><img src="../assets/icon-info.png" alt=""></span> <span>*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="email-error" required>
+          <small class="field-error" id="email-error"></small>
+        </div>
+        <div class="field-group">
+          <label for="github"><img class="field-icon" src="../assets/icon-github.png" alt=""> GitHub username <span class="info-tip" title="Enter your GitHub handle with the @ prefix." aria-label="Enter your GitHub handle with the @ prefix."><img src="../assets/icon-info.png" alt=""></span> <span>*</span></label>
+          <div class="input-prefix"><span aria-hidden="true">@</span><input id="github" name="github" type="text" autocomplete="off" placeholder="@yourhandle" aria-describedby="github-help github-error" required></div>
+          <small class="field-hint" id="github-help">Include the @ prefix, e.g. @octocat</small>
+          <small class="field-error" id="github-error"></small>
+        </div>
+        <div class="field-group">
+          <label for="avatar"><img class="field-icon upload-label-icon" src="../assets/icon-upload.png" alt=""> Profile image <span class="info-tip" title="Choose a JPG or PNG image that is 2 MB or less." aria-label="Choose a JPG or PNG image that is 2 MB or less."><img src="../assets/icon-info.png" alt=""></span> <span>*</span></label>
+          <label class="upload-zone" for="avatar" id="upload-zone">
+            <span class="upload-icon" aria-hidden="true"><img src="../assets/icon-upload.png" alt=""></span><span class="upload-copy"><strong>Choose an image</strong><small>JPEG or PNG · 2 MB max</small></span><span class="upload-action">Browse</span>
+          </label>
+          <input class="visually-hidden" id="avatar" name="avatar" type="file" accept="image/jpeg,image/png" aria-describedby="avatar-error" required>
+          <div class="upload-preview" id="upload-preview" hidden><img id="preview-image" alt="Selected profile image preview"><span id="preview-name"></span><button type="button" class="remove-file" id="remove-file" aria-label="Remove selected image">×</button></div>
+          <small class="field-error" id="avatar-error"></small>
+        </div>
+        <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+        <button class="button button-primary submit-button" type="submit">Generate my ticket <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer form-footer"><a class="brand" href="index.html" aria-label="Coding Conf home"><img class="brand-logo" src="../assets/logo-mark.svg" alt=""><span>Coding<span class="brand-light">Conf</span></span></a><p>One day. Big ideas. <span>© 2026 Coding Conf</span></p><span class="footer-location">PAPINE, JAMAICA</span></footer>
+</body>
+</html>
